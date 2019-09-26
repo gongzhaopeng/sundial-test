@@ -1,0 +1,23 @@
+{
+  "src_folders": [
+    "tests"
+  ],
+  "webdriver": {
+    "start_process": true,
+    "server_path": "node_modules/.bin/chromedriver",
+    "port": 9515,
+    "status_poll_interval": 1000,
+    "max_status_poll_tries": 5,
+    "request_timeout_options": {
+      "timeout": 5000,
+      "retry_attempts": 5
+    }
+  },
+  "test_settings": {
+    "default": {
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      }
+    }
+  }
+}
